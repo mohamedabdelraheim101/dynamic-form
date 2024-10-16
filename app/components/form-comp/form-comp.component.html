@@ -1,0 +1,10 @@
+<p>form-comp works!</p>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div *ngFor="let data of formData">
+        <label >{{data.label}}</label>
+        <input [type]="data.type" [formControlName]="data.formControlName" >
+
+    </div>
+
+
+</form>
